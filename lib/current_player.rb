@@ -9,7 +9,7 @@ def turn_count(board_array)
 end
 
 def current_player(game_board)
-  if (turn_count(game_board) % 2 == 0)
+  if (turn_count(game_board).even?)
     return "X"
   else 
     return "O"
